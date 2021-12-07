@@ -10,6 +10,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
+import androidx.navigation.fragment.findNavController
 import com.example.bookswap.R
 import com.example.bookswap.databinding.FragmentLoginBinding
 import com.example.bookswap.databinding.FragmentRegisterBinding
@@ -38,6 +39,11 @@ class RegisterFragment : Fragment() {
             }
 
         })
+
+        binding.yaTienesCuenta.setOnClickListener{
+            findNavController().navigate(R.id.action_registerFragment_to_login)
+        }
+
         return binding.root
     }
 

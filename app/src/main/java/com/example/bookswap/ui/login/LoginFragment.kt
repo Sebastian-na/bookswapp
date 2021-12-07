@@ -17,6 +17,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
+import androidx.navigation.fragment.findNavController
 import com.example.bookswap.MainActivity
 import com.example.bookswap.R
 import com.example.bookswap.databinding.FragmentLoginBinding
@@ -49,6 +50,10 @@ class LoginFragment : Fragment() {
                 Snackbar.make(binding.root, R.string.bad_credentials, Snackbar.LENGTH_SHORT).show()
             }
         })
+
+        binding.noTienesCuenta.setOnClickListener{
+            findNavController().navigate(R.id.action_login_to_registerFragment)
+        }
 
         return binding.root
     }
