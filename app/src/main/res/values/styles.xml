@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="inter_font_thin" parent="@android:style/TextAppearance.Small">
+        <item name="android:fontFamily">@font/inter_thin</item>
+    </style>
+    <style name="inter_font_extra_light" parent="@android:style/TextAppearance.Small">
+        <item name="android:fontFamily">@font/inter_extra_light</item>
+    </style>
+    <style name="inter_font_light" parent="@android:style/TextAppearance.Small">
+        <item name="android:fontFamily">@font/inter_light</item>
+    </style>
+    <style name="inter_font_regular" parent="@android:style/TextAppearance.Small">
+        <item name="android:fontFamily">@font/inter_regular</item>
+    </style>
+    <style name="inter_font_medium" parent="@android:style/TextAppearance.Small">
+        <item name="android:fontFamily">@font/inter_medium</item>
+    </style>
+    <style name="inter_font_semi_bold" parent="@android:style/TextAppearance.Small">
+        <item name="android:fontFamily">@font/inter_semi_bold</item>
+    </style>
+    <style name="inter_font_bold" parent="@android:style/TextAppearance.Small">
+        <item name="android:fontFamily">@font/inter_bold</item>
+    </style>
+    <style name="inter_font_extra_bold" parent="@android:style/TextAppearance.Small">
+        <item name="android:fontFamily">@font/inter_extra_bold</item>
+    </style>
+    <style name="inter_font_black" parent="@android:style/TextAppearance.Small">
+        <item name="android:fontFamily">@font/inter_black</item>
+    </style>
+</resources>

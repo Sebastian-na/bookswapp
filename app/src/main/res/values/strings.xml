@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name" translatable="false">Bookswap</string>
+    <string name="title_home" translatable="false">Home</string>
+    <string name="title_dashboard" translatable="false">Dashboard</string>
+    <string name="title_notifications" translatable="false">Notifications</string>
+    <string name="login" translatable="false">Iniciar sesión</string>
+    <string name="register" translatable="false">Registrarse</string>
+    <string name="slogan" translatable="false">Intercambia ideas</string>
+    <string name="welcome" translatable="false">Bienvenido de nuevo</string>
+    <string name="inicia_sesion_en_tu_cuenta" translatable="false">Inicia sesión en tu cuenta</string>
+    <string name="email" translatable="false">Email</string>
+    <string name="contraseña" translatable="false">Contraseña</string>
+    <string name="olvidaste_tu_contraseña" translatable="false">¿Olvidaste tu contraseña?</string>
+    <string name="no_tienes_una_cuenta" translatable="false">¿No tienes una cuenta? Regístrate</string>
+    <string name="bad_credentials" translatable="false">Email y/o contraseña incorrectos</string>
+    <string name="regístrate" translatable="false">Regístrate</string>
+    <string name="crea_tu_nueva_cuenta" translatable="false">Crea tu nueva cuenta</string>
+    <string name="nombre" translatable="false">Nombre</string>
+    <string name="confirma_tu_contraseña" translatable="false">Confirma tu contraseña</string>
+    <string name="al_hacer_click_aceptas" translatable="false">Al hacer click en “Regístrarse” aceptas nuestros términos de uso y política de privacidad.</string>
+    <string name="ya_tienes_cuenta" translatable="false">¿Ya tienes una cuenta? Inicia sesión</string>
+    <string name="user_already_created" translatable="false">El usuario con este email ya fue creado. Por favor, verifica tu email.</string>
+    <string name="password_not_equal" translatable="false">Las contraseñas no son iguales</string>
+    <string name="use_unal_email" translatable="false">Por favor, usa tu correo unal</string>
+    <string name="password_too_short" translatable="false">La contraseña debe tener al menos 8 caracteres</string>
+    <string name="password_should_contain" translatable="false">La contraseña debe tener al menos una mayúscula, una minúscula, un caracter especial y un número</string>
+</resources>
