@@ -18,19 +18,28 @@
         <entry key="..\:/Users/sebas/Documents/bookswap/app/src/main/res/drawable/ic_password_24dp.xml" value="0.3671875" />
         <entry key="..\:/Users/sebas/Documents/bookswap/app/src/main/res/drawable/loading_animation.xml" value="0.1" />
         <entry key="..\:/Users/sebas/Documents/bookswap/app/src/main/res/drawable/loading_img.xml" value="0.1" />
+        <entry key="..\:/Users/sebas/Documents/bookswap/app/src/main/res/drawable/post_radius.xml" value="0.27760416666666665" />
+        <entry key="..\:/Users/sebas/Documents/bookswap/app/src/main/res/drawable/radius_s.xml" value="0.1574074074074074" />
         <entry key="..\:/Users/sebas/Documents/bookswap/app/src/main/res/drawable/rounded_corner.xml" value="0.3828125" />
         <entry key="..\:/Users/sebas/Documents/bookswap/app/src/main/res/drawable/top_left_corner_rounded.xml" value="0.21770833333333334" />
         <entry key="..\:/Users/sebas/Documents/bookswap/app/src/main/res/font/font.xml" value="0.2740740740740741" />
         <entry key="..\:/Users/sebas/Documents/bookswap/app/src/main/res/layout/activity_login.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/sebas/Documents/bookswap/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/sebas/Documents/bookswap/app/src/main/res/layout/activity_main.xml" value="0.3338068181818182" />
+        <entry key="..\:/Users/sebas/Documents/bookswap/app/src/main/res/layout/book_result_item.xml" value="0.33" />
         <entry key="..\:/Users/sebas/Documents/bookswap/app/src/main/res/layout/fragment_dashboard.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/sebas/Documents/bookswap/app/src/main/res/layout/fragment_home.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/sebas/Documents/bookswap/app/src/main/res/layout/fragment_home.xml" value="0.3338068181818182" />
         <entry key="..\:/Users/sebas/Documents/bookswap/app/src/main/res/layout/fragment_login.xml" value="0.22" />
         <entry key="..\:/Users/sebas/Documents/bookswap/app/src/main/res/layout/fragment_login_register.xml" value="0.27089337175792505" />
+        <entry key="..\:/Users/sebas/Documents/bookswap/app/src/main/res/layout/fragment_messages.xml" value="0.15885416666666666" />
         <entry key="..\:/Users/sebas/Documents/bookswap/app/src/main/res/layout/fragment_notifications.xml" value="0.11141304347826086" />
+        <entry key="..\:/Users/sebas/Documents/bookswap/app/src/main/res/layout/fragment_profile.xml" value="0.20652173913043478" />
         <entry key="..\:/Users/sebas/Documents/bookswap/app/src/main/res/layout/fragment_register.xml" value="0.25" />
+        <entry key="..\:/Users/sebas/Documents/bookswap/app/src/main/res/layout/fragment_search.xml" value="0.1" />
         <entry key="..\:/Users/sebas/Documents/bookswap/app/src/main/res/layout/login_register_fragment.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/sebas/Documents/bookswap/app/src/main/res/layout/post_item.xml" value="0.26145833333333335" />
         <entry key="..\:/Users/sebas/Documents/bookswap/app/src/main/res/layout/register_fragment.xml" value="0.35104166666666664" />
+        <entry key="..\:/Users/sebas/Documents/bookswap/app/src/main/res/layout/wanted_book_item.xml" value="0.26145833333333335" />
+        <entry key="..\:/Users/sebas/Documents/bookswap/app/src/main/res/menu/action_bar_menu.xml" value="0.15885416666666666" />
         <entry key="..\:/Users/sebas/Documents/bookswap/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.3828125" />
         <entry key="..\:/Users/sebas/Documents/bookswap/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.3828125" />
         <entry key="..\:/Users/sebas/Documents/bookswap/app/src/main/res/xml/network_security_config.xml" value="0.23072916666666668" />

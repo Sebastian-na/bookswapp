@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="post"
+            type="com.example.bookswap.model.Post" />
+        <variable
+            name="fragment"
+            type="com.example.bookswap.ui.home.HomeFragment" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingVertical="16dp"
+        android:paddingHorizontal="64dp"
+        android:background="@drawable/post_radius"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="centerCrop"
+                tools:src="@drawable/user"
+                app:imageUrl="@{post.ownerPhoto}"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Sebastian Castañeda"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/blue_500"
+                android:textFontWeight="500"
+                android:text="@{post.ownerName}"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_marginTop="16dp"
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:padding="2dp"
+            app:imageUrl="@{post.photos[0]}"
+            tools:src="@drawable/tools_book"
+            android:layout_gravity="center_horizontal"
+            />
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{@string/book_author(post.title, post.author)}"
+            tools:text="Flow by Mihaly Cskizksmlasl"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            >
+        </TextView>
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/libros_deseados"
+            android:textColor="@color/blue_500"
+            android:textFontWeight="500"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/wanted_books"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/wanted_book_item"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:wantedBooks="@{post.wantedBooks}"
+            />
+
+
+
+    </LinearLayout>
+</layout>

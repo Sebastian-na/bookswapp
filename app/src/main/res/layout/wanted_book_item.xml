@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="wantedBook"
+            type="com.example.bookswap.model.Book" />
+        <variable
+            name="fragment"
+            type="com.example.bookswap.ui.home.HomeFragment" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/post_radius"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="- Range"
+            android:textColor="@color/black"
+            android:text="@{@string/wanted_book_title(wantedBook.title)}"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="(David Epstein)"
+            android:layout_marginLeft="6dp"
+            android:text="@{@string/wanted_book_author(wantedBook.author)}"
+            />
+
+    </LinearLayout>
+</layout>

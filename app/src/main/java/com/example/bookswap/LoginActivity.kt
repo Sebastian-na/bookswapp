@@ -1,11 +1,14 @@
 package com.example.bookswap
 
+import android.content.Context
+import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.view.WindowInsets
 import android.view.WindowManager
+import androidx.activity.viewModels
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.WindowCompat
@@ -22,10 +25,24 @@ class LoginActivity: AppCompatActivity() {
 
     private lateinit var binding: ActivityLoginBinding
     private lateinit var navController: NavController
+    private val viewModel: LoginViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        val sharedPref = getSharedPreferences("user_information", Context.MODE_PRIVATE)
+        val accessToken = sharedPref.getString(getString(R.string.access_token_key), "")
+        viewModel.accessToken.value = accessToken
+        Log.d("loginactivity", viewModel.accessToken.value.toString())
+        viewModel.isTokenOk.observe(this, {
+            if(it == IsTokenOK.NO){
+                Log.d("loginactivity", "bad token")
+                //do nothing
+            }else{
+                val intent: Intent = Intent(this, MainActivity::class.java)
+                startActivity(intent)
+            }
+        })
+        viewModel.verifyToken()
         super.onCreate(savedInstanceState)
-
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
         navController = findNavController(R.id.nav_host_fragment_activity_login)

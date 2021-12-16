@@ -20,7 +20,7 @@ class LoginViewModel : ViewModel() {
 
     val email = MutableLiveData<String>("")
     val password = MutableLiveData<String>("")
-    private val accessToken = MutableLiveData<String>()
+    val accessToken = MutableLiveData<String>()
     val statusCode = MutableLiveData<Int>()
 
     fun login() {

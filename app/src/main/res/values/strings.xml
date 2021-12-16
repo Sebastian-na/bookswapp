@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name" translatable="false">Bookswap</string>
     <string name="title_home" translatable="false">Home</string>
-    <string name="title_dashboard" translatable="false">Dashboard</string>
-    <string name="title_notifications" translatable="false">Notifications</string>
+    <string name="title_messages" translatable="false">Mensajes</string>
+    <string name="title_notifications" translatable="false">Notificaciones</string>
     <string name="login" translatable="false">Iniciar sesión</string>
     <string name="register" translatable="false">Registrarse</string>
     <string name="slogan" translatable="false">Intercambia ideas</string>
@@ -24,4 +24,10 @@
     <string name="use_unal_email" translatable="false">Por favor, usa tu correo unal</string>
     <string name="password_too_short" translatable="false">La contraseña debe tener al menos 8 caracteres</string>
     <string name="password_should_contain" translatable="false">La contraseña debe tener al menos una mayúscula, una minúscula, un caracter especial y un número</string>
+    <string name="access_token_key" translatable="false">com.example.bookswap.ACCESS_TOKEN</string>
+    <string name="query_hint" translatable="false">Busca libros</string>
+    <string name="book_author" translatable="false">%1$s by %2$s</string>
+    <string name="libros_deseados">Libros deseados</string>
+    <string name="wanted_book_title">- %1$s</string>
+    <string name="wanted_book_author">- %1$s</string>
 </resources>

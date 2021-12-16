@@ -1,18 +1,16 @@
 package com.example.bookswap.ui.login
 
+import android.content.Context
 import android.content.Intent
-import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
 import android.text.Spannable
 import android.text.SpannableString
-import android.text.SpannableStringBuilder
 import android.text.style.ForegroundColorSpan
 import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.viewModels
@@ -45,6 +43,11 @@ class LoginFragment : Fragment() {
         viewModel.statusCode.observe(viewLifecycleOwner, Observer { statusCode ->
             if(statusCode == 200){
                 val intent = Intent(activity, MainActivity::class.java)
+                val sharedPref = activity?.getSharedPreferences("user_information", Context.MODE_PRIVATE)
+                with (sharedPref.edit()){
+                    putString(getString(R.string.access_token_key), "Bearer " + viewModel.accessToken.value)
+                    apply()
+                }
                 startActivity(intent)
             }else if(statusCode == 401){
                 Snackbar.make(binding.root, R.string.bad_credentials, Snackbar.LENGTH_SHORT).show()
