@@ -25,9 +25,21 @@
     <string name="password_too_short" translatable="false">La contraseña debe tener al menos 8 caracteres</string>
     <string name="password_should_contain" translatable="false">La contraseña debe tener al menos una mayúscula, una minúscula, un caracter especial y un número</string>
     <string name="access_token_key" translatable="false">com.example.bookswap.ACCESS_TOKEN</string>
+    <string name="user_id_key">com.example.bookswap.USER_ID</string>
     <string name="query_hint" translatable="false">Busca libros</string>
     <string name="book_author" translatable="false">%1$s by %2$s</string>
     <string name="libros_deseados">Libros deseados</string>
     <string name="wanted_book_title">- %1$s</string>
     <string name="wanted_book_author">- %1$s</string>
+    <string name="perfil">Perfil</string>
+    <string name="intercambios">Intercambios</string>
+    <string name="amigos">Amigos</string>
+    <string name="author_profile">(%1$s)</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="a_adir_libro">Añadir libro</string>
+    <string name="a_adir_foto">Añadir foto</string>
+    <string name="guardar">Guardar</string>
+
+
 </resources>

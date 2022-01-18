@@ -25,11 +25,13 @@ class HomeViewModel : ViewModel() {
         viewModelScope.launch {
             withContext(Dispatchers.IO){
                 try{
-                    val response = Api.retrofitService.getFeed(accessToken.value!!)
-                    _posts.postValue(response)
+                    Log.d("homeviewmodel", "from home")
+                    Log.d("homeviewmodel", accessToken.value.toString())
+                    val response = Api.retrofitService.getFeed(accessToken=accessToken.value!!)
                     Log.d("homeviewmodel", response.toString())
+                    _posts.postValue(response)
                 }catch(e: Exception){
-                    Log.d("homeviewmodel", e.localizedMessage)
+                    Log.d("homeviewmodel", e.toString())
                 }
 
             }

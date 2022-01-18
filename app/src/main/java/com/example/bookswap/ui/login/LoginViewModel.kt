@@ -20,6 +20,7 @@ class LoginViewModel : ViewModel() {
 
     val email = MutableLiveData<String>("")
     val password = MutableLiveData<String>("")
+    val userId = MutableLiveData<String>()
     val accessToken = MutableLiveData<String>()
     val statusCode = MutableLiveData<Int>()
 
@@ -30,6 +31,7 @@ class LoginViewModel : ViewModel() {
                 try{
                     val response = Api.retrofitService.login(User("", email.value!!, password.value!!))
                     accessToken.postValue(response.token!!)
+                    accessToken.postValue(response.user_id!!)
                     status.postValue(ApiRequestStatus.DONE)
                     statusCode.postValue(200)
                 }catch(e: retrofit2.HttpException){

@@ -39,7 +39,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 tools:text="Sebastian Castañeda"
-                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
                 android:textColor="@color/blue_500"
                 android:textFontWeight="500"
                 android:text="@{post.ownerName}"

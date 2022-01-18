@@ -11,7 +11,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.bookswap"
-        minSdk 21
+        minSdk 28
         targetSdk 31
         versionCode 1
         versionName "1.0"
@@ -67,4 +67,5 @@ dependencies {
 
     // Coil
     implementation "io.coil-kt:coil:1.1.1"
+
 }

@@ -8,14 +8,18 @@
             name="viewModel"
             type="com.example.bookswap.ui.home.HomeViewModel" />
     </data>
-
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/lightGray"
         android:padding="16dp"
         android:gravity="center_horizontal"
-        tools:context=".ui.home.HomeFragment">
+        tools:context=".ui.home.HomeFragment"
+        android:paddingBottom="64dp"
+        >
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/posts_feed"
@@ -27,4 +31,5 @@
 
             />
     </LinearLayout>
+    </ScrollView>
 </layout>

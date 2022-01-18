@@ -10,6 +10,7 @@ import com.example.bookswap.model.Book
 import com.example.bookswap.model.Post
 import com.example.bookswap.ui.home.WantedBooksAdapter
 import com.example.bookswap.ui.login.ApiRequestStatus
+import com.example.bookswap.ui.profile.BooksAdapter
 import com.example.bookswap.ui.search.BooksSearchedAdapter
 import com.example.bookswap.ui.search.PostAdapter
 
@@ -45,6 +46,12 @@ fun bindPostRecyclerView(recyclerView: RecyclerView, data: List<Post>?){
 @BindingAdapter("wantedBooks")
 fun bindWantedBookRecyclerView(recyclerView: RecyclerView, data: List<Book>?){
     val adapter = recyclerView.adapter as WantedBooksAdapter
+    adapter.submitList(data)
+}
+
+@BindingAdapter("books")
+fun bindBookRecyclerView(recyclerView: RecyclerView, data: List<Book>?){
+    val adapter = recyclerView.adapter as BooksAdapter
     adapter.submitList(data)
 }
 

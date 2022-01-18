@@ -46,6 +46,7 @@ class LoginFragment : Fragment() {
                 val sharedPref = activity?.getSharedPreferences("user_information", Context.MODE_PRIVATE)
                 with (sharedPref.edit()){
                     putString(getString(R.string.access_token_key), "Bearer " + viewModel.accessToken.value)
+                    putString(getString(R.string.user_id_key), viewModel.userId.value)
                     apply()
                 }
                 startActivity(intent)

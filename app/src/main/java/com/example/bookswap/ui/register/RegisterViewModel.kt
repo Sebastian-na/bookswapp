@@ -24,6 +24,7 @@ class RegisterViewModel(application: Application) : AndroidViewModel(application
     val password2 = MutableLiveData<String>("")
     val messageResponse = MutableLiveData("")
 
+
     fun register(){
         if(!email.value?.contains("@unal.edu.co")!!){
             messageResponse.postValue(getString(R.string.use_unal_email))
@@ -48,7 +49,6 @@ class RegisterViewModel(application: Application) : AndroidViewModel(application
             withContext(Dispatchers.IO){
                 try{
                     val response = Api.retrofitService.register(user)
-                    Log.d(TAG, response.message.toString())
                     messageResponse.postValue(response.message.toString())
                 }catch(e: retrofit2.HttpException){
                     messageResponse.postValue(getString(R.string.user_already_created))

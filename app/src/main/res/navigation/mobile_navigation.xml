@@ -21,7 +21,7 @@
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
     <fragment
-        android:id="@+id/messagesFragment"
+        android:id="@+id/navigation_messages"
         android:name="com.example.bookswap.ui.messages.MessagesFragment"
         android:label="fragment_messages"
         tools:layout="@layout/fragment_messages" />
@@ -30,5 +30,24 @@
         android:name="com.example.bookswap.ui.search.SearchFragment"
         android:label="fragment_search"
         tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.bookswap.ui.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_navigation_profile_to_addBookFragment"
+            app:destination="@id/addBookFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addBookFragment"
+        android:name="com.example.bookswap.ui.add_book.AddBookFragment"
+        android:label="AddBookFragment"
+        tools:layout="@layout/fragment_add_book"
+        >
+        <action
+            android:id="@+id/action_addBookFragment_to_navigation_profile"
+            app:destination="@id/navigation_profile" />
+    </fragment>
 
 </navigation>

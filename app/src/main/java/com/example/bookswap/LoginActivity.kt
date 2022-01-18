@@ -30,14 +30,16 @@ class LoginActivity: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         val sharedPref = getSharedPreferences("user_information", Context.MODE_PRIVATE)
         val accessToken = sharedPref.getString(getString(R.string.access_token_key), "")
+        val userId = sharedPref.getString(getString(R.string.user_id_key), "")
+        if(userId!!.isEmpty()){
+            //do nothing
+        }
         viewModel.accessToken.value = accessToken
-        Log.d("loginactivity", viewModel.accessToken.value.toString())
         viewModel.isTokenOk.observe(this, {
             if(it == IsTokenOK.NO){
-                Log.d("loginactivity", "bad token")
                 //do nothing
             }else{
-                val intent: Intent = Intent(this, MainActivity::class.java)
+                val intent = Intent(this, MainActivity::class.java)
                 startActivity(intent)
             }
         })

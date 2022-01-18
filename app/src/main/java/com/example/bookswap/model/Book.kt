@@ -8,5 +8,5 @@ data class Book(
     val genre: String,
     val tags: List<String>,
     val description: String,
-    val photos: List<String>
+    val photos: List<String>,
     )

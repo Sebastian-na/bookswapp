@@ -43,6 +43,19 @@
         <entry key="..\:/Users/sebas/Documents/bookswap/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.3828125" />
         <entry key="..\:/Users/sebas/Documents/bookswap/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.3828125" />
         <entry key="..\:/Users/sebas/Documents/bookswap/app/src/main/res/xml/network_security_config.xml" value="0.23072916666666668" />
+        <entry key="..\:/Users/sebas/OneDrive/Documentos/bookswap/app/src/main/res/drawable/bio_radius.xml" value="0.22604166666666667" />
+        <entry key="..\:/Users/sebas/OneDrive/Documentos/bookswap/app/src/main/res/drawable/linear_bg.xml" value="0.221875" />
+        <entry key="..\:/Users/sebas/OneDrive/Documentos/bookswap/app/src/main/res/drawable/radius_s.xml" value="0.221875" />
+        <entry key="..\:/Users/sebas/OneDrive/Documentos/bookswap/app/src/main/res/layout/fragment_add_book.xml" value="0.33" />
+        <entry key="..\:/Users/sebas/OneDrive/Documentos/bookswap/app/src/main/res/layout/fragment_books.xml" value="0.209375" />
+        <entry key="..\:/Users/sebas/OneDrive/Documentos/bookswap/app/src/main/res/layout/fragment_books_adapter.xml" value="0.1294934640522876" />
+        <entry key="..\:/Users/sebas/OneDrive/Documentos/bookswap/app/src/main/res/layout/fragment_fragment_available_books.xml" value="0.2140625" />
+        <entry key="..\:/Users/sebas/OneDrive/Documentos/bookswap/app/src/main/res/layout/fragment_fragment_wanted_books.xml" value="0.2140625" />
+        <entry key="..\:/Users/sebas/OneDrive/Documentos/bookswap/app/src/main/res/layout/fragment_notifications.xml" value="0.1556372549019608" />
+        <entry key="..\:/Users/sebas/OneDrive/Documentos/bookswap/app/src/main/res/layout/fragment_profile.xml" value="0.25" />
+        <entry key="..\:/Users/sebas/OneDrive/Documentos/bookswap/app/src/main/res/layout/fragment_register.xml" value="0.1140625" />
+        <entry key="..\:/Users/sebas/OneDrive/Documentos/bookswap/app/src/main/res/layout/post_item.xml" value="0.1" />
+        <entry key="..\:/Users/sebas/OneDrive/Documentos/bookswap/app/src/main/res/layout/profile_book_item.xml" value="0.67" />
       </map>
     </option>
   </component>
